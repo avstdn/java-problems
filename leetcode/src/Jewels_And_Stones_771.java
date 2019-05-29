@@ -10,5 +10,4 @@ public class Jewels_And_Stones_771 {
         return hits;
     }
 }
-
 // https://leetcode.com/problems/jewels-and-stones/
