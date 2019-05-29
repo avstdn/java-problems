@@ -9,45 +9,37 @@
 
 public class Add_Two_Numbers_2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        long result = getNum(l1) + getNum(l2);
-        System.out.println(getNum(l2));
-        System.out.println(result);
 
+        boolean transition = false;
         ListNode head = null;
 
-        if (result == 0) head = insert(head, 0);
-        else {
-            while (result > 0) {
-                head = insert(head, (int)(result % 10));
-                result /= 10;
-            }
+        while (l1 != null || l2 != null) {
+
+            int first = l1 == null ? 0 : l1.val;
+            int second = l2 == null ? 0 : l2.val;
+            int sum = transition ? first + second + 1 : first + second;
+
+            if (transition = sum > 9) sum %= 10;
+
+            head = insertNode(head, sum);
+
+            l1 = l1 != null ? l1.next : null;
+            l2 = l2 != null ? l2.next : null;
         }
+        if (transition) head = insertNode(head, 1);
 
         return head;
     }
 
-    public long getNum(ListNode li) {
-        long mult = 1;
-        long num = 0;
+    public ListNode insertNode(ListNode head, int val) {
+        ListNode node = new ListNode(val);
 
-        while (li != null) {
-            num += li.val * mult;
-            li = li.next;
-            mult *= 10;
-        }
-
-        return num;
-    }
-
-    public ListNode insert(ListNode head, int val) {
-        ListNode p = new ListNode(val);
-
-        if (head == null) head = p;
-        else if (head.next == null) head.next = p;
+        if (head == null) head = node;
+        else if (head.next == null) head.next = node;
         else {
             ListNode start = head;
-            while (start.next != null) start = start.next;
-            start.next = p;
+            while(start.next != null) start = start.next;
+            start.next = node;
         }
 
         return head;
