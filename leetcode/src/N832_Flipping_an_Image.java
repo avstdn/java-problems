@@ -1,4 +1,4 @@
-public class Flipping_an_Image_832 {
+public class N832_Flipping_an_Image {
     public int[][] flipAndInvertImage(int[][] A) {
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < Math.ceil(A[i].length / 2.0); j++) {

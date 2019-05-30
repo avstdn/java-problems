@@ -7,7 +7,7 @@
  * }
  */
 
-public class Palindrome_Linked_List_234 {
+public class N234_Palindrome_Linked_List {
         public boolean isPalindrome(ListNode head) {
             ArrayDeque deque = new ArrayDeque();
             ListNode newHead = head;

@@ -1,4 +1,4 @@
-public class Palindrome_Number_9 {
+public class N9_Palindrome_Number {
     public boolean isPalindrome(int x) {
 //         if (x < 0) return false;
 

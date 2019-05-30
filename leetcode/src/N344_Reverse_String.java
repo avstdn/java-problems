@@ -1,4 +1,4 @@
-public class Reverse_String_344 {
+public class N344_Reverse_String {
     public void reverseString(char[] s) {
         reverse(s, 0, s.length-1);
     }

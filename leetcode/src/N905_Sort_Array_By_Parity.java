@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Sort_Array_By_Parity_905 {
+public class N905_Sort_Array_By_Parity {
     public int[] sortArrayByParity(int[] A) {
         LinkedList list = new LinkedList();
 

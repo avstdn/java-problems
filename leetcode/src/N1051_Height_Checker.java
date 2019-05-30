@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Height_Checker_1051 {
+public class N1051_Height_Checker {
     public int heightChecker(int[] heights) {
         int diff = 0;
         int[] sortedHeights = heights.clone();

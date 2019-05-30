@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Unique_Email_Addresses_929 {
+public class N929_Unique_Email_Addresses {
     public int numUniqueEmails(String[] emails) {
         int result = 0;
         HashSet<String> set = new HashSet();

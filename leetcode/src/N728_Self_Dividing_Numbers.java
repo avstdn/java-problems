@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Self_Dividing_Numbers_728 {
+public class N728_Self_Dividing_Numbers {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> list = new ArrayList<>();
         while (left <= right) {

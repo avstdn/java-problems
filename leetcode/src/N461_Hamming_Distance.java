@@ -1,4 +1,4 @@
-public class Hamming_Distance_461 {
+public class N461_Hamming_Distance {
     public int hammingDistance(int x, int y) {
         int xor = x ^ y;
         int count = 0;

@@ -1,4 +1,4 @@
-public class Roman_to_Integer_13 {
+public class N13_Roman_to_Integer {
     public int romanToInt(String s) {
         char[] nums = s.toCharArray();
         int length = nums.length - 1;

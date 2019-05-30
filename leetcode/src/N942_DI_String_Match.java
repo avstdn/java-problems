@@ -1,4 +1,4 @@
-public class DI_String_Match_942 {
+public class N942_DI_String_Match {
     public int[] diStringMatch(String S) {
         int inc = 0;
         int dec = S.length();

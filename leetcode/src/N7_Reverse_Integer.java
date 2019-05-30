@@ -1,4 +1,4 @@
-public class Reverse_Integer_7 {
+public class N7_Reverse_Integer {
     public int reverse(int x) {
         int mult = 1;
         String result = "";

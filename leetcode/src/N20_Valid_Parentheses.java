@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.HashMap;
 
-public class Valid_Parentheses_20 {
+public class N20_Valid_Parentheses {
     public boolean isValid(String s) {
 
         char[] ch = s.toCharArray();

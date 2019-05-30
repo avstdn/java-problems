@@ -1,4 +1,4 @@
-public class Remove_Outermost_Parentheses_1021 {
+public class N1021_Remove_Outermost_Parentheses {
     public String removeOuterParentheses(String S) {
         StringBuilder result = new StringBuilder();
         char open = '(';

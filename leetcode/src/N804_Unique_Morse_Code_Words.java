@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Unique_Morse_Code_Words_804 {
+public class N804_Unique_Morse_Code_Words {
     public int uniqueMorseRepresentations(String[] words) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};

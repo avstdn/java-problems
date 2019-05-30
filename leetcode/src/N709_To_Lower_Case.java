@@ -1,4 +1,4 @@
-public class To_Lower_Case_709 {
+public class N709_To_Lower_Case {
     public String toLowerCase(String str) {
         char[] chars = str.toCharArray();
 

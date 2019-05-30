@@ -7,7 +7,7 @@
  * }
  */
 
-public class Add_Two_Numbers_2 {
+public class N2_Add_Two_Numbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         boolean transition = false;

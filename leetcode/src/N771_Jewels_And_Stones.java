@@ -1,4 +1,4 @@
-public class Jewels_And_Stones_771 {
+public class N771_Jewels_And_Stones {
     public int numJewelsInStones(String J, String S) {
         int hits = 0;
 

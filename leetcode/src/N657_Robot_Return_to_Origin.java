@@ -1,4 +1,4 @@
-public class Robot_Return_to_Origin_657 {
+public class N657_Robot_Return_to_Origin {
     public boolean judgeCircle(String moves) {
         int[] coords = {0, 0};
 
