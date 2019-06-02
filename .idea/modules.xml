@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/codewars/codewars.iml" filepath="$PROJECT_DIR$/codewars/codewars.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-problems.iml" filepath="$PROJECT_DIR$/.idea/java-problems.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
     </modules>
