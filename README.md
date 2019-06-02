@@ -1,3 +1,4 @@
 # Java задачки
-Выкладываю решения своих задач с сайтов: leetcode.com, codewars.com, hackerrank.com.
+Выкладываю решение своих задач с сайтов: leetcode.com, codewars.com, hackerrank.com.
+
 Стараюсь ежедневно делать по крайней мере одну задачу.
