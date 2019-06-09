@@ -1,3 +1,5 @@
+package codewars;
+
 public class Stop_gninnipS_My_sdroW {
     public String spinWords(String sentence) {
         String[] words = sentence.split(" ");

@@ -1,3 +1,5 @@
+package codewars;
+
 public class Snail {
     public static int[] snail(int[][] array) {
         int[] result = {};

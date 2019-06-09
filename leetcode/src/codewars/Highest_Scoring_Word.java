@@ -1,3 +1,5 @@
+package codewars;
+
 public class Highest_Scoring_Word {
     public static String high(String s) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";

@@ -1,3 +1,5 @@
+package codewars;
+
 public class Find_the_stray_number {
     static int stray(int[] numbers) {
         int result = 0;

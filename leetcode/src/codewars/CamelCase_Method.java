@@ -1,3 +1,5 @@
+package codewars;
+
 public class CamelCase_Method {
     public static String camelCase(String str) {
         char[] arr = str.trim().toCharArray();

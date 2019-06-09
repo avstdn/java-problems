@@ -1,3 +1,5 @@
+package codewars;
+
 public class Merged_String_Checker {
     public boolean isMerge(String s, String part1, String part2){
         if(s.isEmpty() && part1.isEmpty() && part2.isEmpty()){

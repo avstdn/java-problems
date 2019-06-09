@@ -1,3 +1,5 @@
+package codewars;
+
 public class Number_of_trailing_zeros_of_N {
     public static int zeros(int n) {
         return getSum(n, 1);

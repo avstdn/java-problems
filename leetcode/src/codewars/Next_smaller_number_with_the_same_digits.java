@@ -1,3 +1,5 @@
+package codewars;
+
 import java.util.*;
 
 public class Next_smaller_number_with_the_same_digits {

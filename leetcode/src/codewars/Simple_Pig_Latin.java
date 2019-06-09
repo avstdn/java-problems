@@ -1,3 +1,5 @@
+package codewars;
+
 public class Simple_Pig_Latin {
     public static String pigIt(String str) {
         String[] words = str.split(" ");
