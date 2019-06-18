@@ -18,4 +18,5 @@ public class N1_Two_Sum {
         return result;
     }
 }
+
 // https://leetcode.com/problems/two-sum/
