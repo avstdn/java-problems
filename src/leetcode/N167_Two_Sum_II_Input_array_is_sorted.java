@@ -30,10 +30,23 @@ public class N167_Two_Sum_II_Input_array_is_sorted {
             if (map.containsKey(numbers[i])) {
                 indexes[0] = map.get(numbers[i]);
                 indexes[1] = i + 1;
+                break;
             } else map.put(target - numbers[i], i + 1);
         }
 
         return indexes;
+    }
+
+    public int[] twoSumEfficient(int[] numbers, int target) {
+        int start = 0;
+        int end = numbers.length - 1;
+
+        while(start < end){
+            if (numbers[start] + numbers[end] == target) break;
+            if (numbers[start] + numbers[end] < target) start++;
+            else end--;
+        }
+        return new int[] {start + 1, end + 1};
     }
 }
 
