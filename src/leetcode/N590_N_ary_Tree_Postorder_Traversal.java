@@ -13,9 +13,10 @@ import java.util.*;
  *     public Node(int _val,List<Node> _children) {
  *         val = _val;
  *         children = _children;
- * }
+ *     }
+ * };
  *
- * Given an n-ary tree, return the preorder traversal of its nodes' values.
+ * Given an n-ary tree, return the postorder traversal of its nodes' values.
  *
  * For example, given a 3-ary tree:
  *        1
@@ -24,14 +25,13 @@ import java.util.*;
  *     3  2  4
  *    / \
  *   5   6
- * Return its preorder traversal as: [1,3,5,6,2,4].
+ * Return its postorder traversal as: [5,6,3,2,4,1].
  */
-public class N589_N_ary_Tree_Preorder_Traversal {
-    public List<Integer> preorder(Node root) {
+public class N590_N_ary_Tree_Postorder_Traversal {
+    public List<Integer> postorder(Node root) {
+        if (root == null) return Collections.emptyList();
+
         List<Integer> list = new ArrayList<>();
-
-        if (root == null) return list;
-
         Deque<Node> deque = new ArrayDeque<>();
         deque.push(root);
 
@@ -39,29 +39,30 @@ public class N589_N_ary_Tree_Preorder_Traversal {
             root = deque.pop();
             list.add(root.val);
 
-            for (int i = root.children.size() - 1; i >= 0; i--) {
-                deque.push(root.children.get(i));
+            for (Node child : root.children) {
+                deque.push(child);
             }
         }
 
+        Collections.reverse(list);
+
         return list;
     }
 
-    public List<Integer> preorderRecursive(Node root) {
+    public List<Integer> postorderRecursive(Node root) {
         if (root == null) return Collections.emptyList();
 
         List<Integer> list = new ArrayList<>();
-        preorder(root, list);
+        postorder(root, list);
 
         return list;
     }
 
-    private void preorder(Node root, List<Integer> list) {
-        list.add(root.val);
-
+    private void postorder(Node root, List<Integer> list) {
         for (Node child : root.children) {
-            preorder(child, list);
+            postorder(child, list);
         }
+
+        list.add(root.val);
     }
 }
-// https://leetcode.com/problems/n-ary-tree-preorder-traversal/
