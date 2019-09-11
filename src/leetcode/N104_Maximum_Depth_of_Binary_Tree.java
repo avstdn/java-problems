@@ -29,13 +29,11 @@ package leetcode;
 public class N104_Maximum_Depth_of_Binary_Tree {
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
-        int max = 1;
 
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
-        max += left > right ? left : right;
 
-        return max;
+        return Math.max(left, right) + 1;
     }
 }
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/
